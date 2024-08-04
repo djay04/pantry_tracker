@@ -1,9 +1,6 @@
 import { useRouter } from 'next/router'
 import { Box, Typography, Button} from '@mui/material'
 
-export default function Home(){
-    const router = useRouter();
-}
 
 const navigateToPantry = () => {
     router.push('/page');

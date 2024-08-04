@@ -122,6 +122,12 @@ export default function PantryPage() {
     }
   }, [filteredPantry]);
 
+  useEffect(() => {
+    if (filteredPantry.length > 0) {
+      fetchRecipes();
+    }
+  }, [filteredPantry, fetchRecipes]); // Add fetchRecipes to the dependency array
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
