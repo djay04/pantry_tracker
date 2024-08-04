@@ -126,7 +126,7 @@ export default function PantryPage() {
     if (filteredPantry.length > 0) {
       fetchRecipes();
     }
-  }, [filteredPantry, fetchRecipes]); // Add fetchRecipes to the dependency array
+  }, [fetchRecipes]); // Add fetchRecipes to the dependency array
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
